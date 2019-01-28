@@ -3,15 +3,18 @@ import React, { Component } from 'react'
 class Counter extends Component {
   // YOUR CODE GOES BELOW
   state = {
+    // Counter
     count: 0
   }
 
+  // ClickHandler for Incrementing Counter
   handleAddClick = () => {
     this.setState(({count}) => ({
       count: count + 1
     }));
   }
 
+  // ClickHandler for Decrementing Counter
   handleSubtractClick = () => {
     this.setState(({count}) => ({
       count: count - 1
