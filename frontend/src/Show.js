@@ -6,7 +6,10 @@ class App extends Component {
   
   render() {
     return (
-      <div/> 
+      <div>
+        <p> {this.props.name} </p>
+        <Counter initialCount={this.props.episodes_seen}/>
+      </div>
     )
   }
 }

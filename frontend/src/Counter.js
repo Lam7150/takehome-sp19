@@ -4,7 +4,7 @@ class Counter extends Component {
   // YOUR CODE GOES BELOW
   state = {
     // Counter
-    count: 0
+    count: this.props.initialCount
   }
 
   // ClickHandler for Incrementing Counter
