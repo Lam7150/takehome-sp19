@@ -12,6 +12,12 @@ class App extends Component {
         {id: 3, name: "Black Mirror", episodes_seen: 3},
       ]
     }
+
+    //handleNewShowSubmit = () => {
+    //this.setState({
+      //  shows: [...shows, event.target]
+      //}));
+    //}
   }
 
   render() {
@@ -21,6 +27,14 @@ class App extends Component {
         {this.state.shows.map(x => (
           <Show id={x.id} name={x.name} episodes_seen={x.episodes_seen} />
         ))}
+        <p> Add a new show: </p>
+        //<form onSubmit={this.handleNewShowSubmit}>
+        //  <label>
+        //    Name:
+        //    <input type="text" name="showname"/>
+        //  </label>
+        //  <button type="submit"> Submit </button>
+        //</form>
       </div>
     )
   }
